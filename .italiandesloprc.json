@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "orthography/accented-words": "error",
+    "orthography/apostrophe-errors": "error",
+    "punctuation/no-double-hyphen": "error",
+    "punctuation/no-em-dash": "warning",
+    "punctuation/staccato-sentences": "warning",
+    "punctuation/suspense-ellipsis": "warning",
+    "lexicon/slop-phrases": "error",
+    "lexicon/overused-adjectives": "warning",
+    "lexicon/macaronic-anglicisms": "warning",
+    "structure/robotic-connectors": "warning",
+    "structure/parallel-cliche": "warning",
+    "structure/list-overuse": "warning"
+  },
+  "ignore": ["node_modules", "dist", "*.generated.md"],
+  "lexicon": {
+    "custom-slop-phrases": []
+  }
+}
