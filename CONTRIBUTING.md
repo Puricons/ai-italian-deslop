@@ -3,7 +3,7 @@
 ## Setup
 
 ```bash
-git clone https://github.com/puricelli-enterprise/ai-italian-deslop
+git clone https://github.com/Puricons/ai-italian-deslop
 cd ai-italian-deslop
 npm install
 npm test

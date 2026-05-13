@@ -3,7 +3,7 @@
 > AI Italian deslopification — keep your Italian text human.
 
 [![npm](https://img.shields.io/npm/v/ai-italian-deslop)](https://npmjs.com/package/ai-italian-deslop)
-[![CI](https://github.com/puricelli-enterprise/ai-italian-deslop/actions/workflows/ci.yml/badge.svg)](https://github.com/puricelli-enterprise/ai-italian-deslop/actions)
+[![CI](https://github.com/Puricons/ai-italian-deslop/actions/workflows/ci.yml/badge.svg)](https://github.com/Puricons/ai-italian-deslop/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A linter that detects and fixes the hallmarks of AI-generated Italian text: wrong accents, cinematic punctuation, formulaic phrases, and robotic syntax structures.

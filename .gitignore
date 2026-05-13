@@ -3,3 +3,4 @@ dist/
 coverage/
 *.bak
 .DS_Store
+docs/superpowers/
