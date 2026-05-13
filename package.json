@@ -6,8 +6,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "ai-italian-deslop": "./dist/cli/index.js",
-    "ideslop": "./dist/cli/index.js"
+    "ai-italian-deslop": "dist/cli/index.js",
+    "ideslop": "dist/cli/index.js"
   },
   "exports": {
     ".": {
@@ -23,10 +23,24 @@
     "lint": "tsc --noEmit",
     "prepublishOnly": "npm run build && npm test"
   },
-  "keywords": ["italian", "linter", "ai", "slop", "text-quality", "nlp"],
+  "keywords": [
+    "italian",
+    "linter",
+    "ai",
+    "slop",
+    "text-quality",
+    "nlp"
+  ],
   "license": "MIT",
-  "engines": { "node": ">=20" },
-  "files": ["dist", "README.md", "LICENSE", ".italiandesloprc.json"],
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    ".italiandesloprc.json"
+  ],
   "dependencies": {
     "chalk": "^5.3.0",
     "commander": "^12.0.0",
