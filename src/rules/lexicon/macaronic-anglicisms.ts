@@ -1,8 +1,7 @@
 import type { Rule, Diagnostic, LintContext } from "../../types.js";
-import { createRequire } from "module";
+import anglicismsData from "./data/macaronic-anglicisms.json" assert { type: "json" };
 
-const require = createRequire(import.meta.url);
-const ANGLICISMS: Array<{ wrong: string; right: string }> = require("./data/macaronic-anglicisms.json");
+const ANGLICISMS: Array<{ wrong: string; right: string }> = anglicismsData as Array<{ wrong: string; right: string }>;
 
 function getLineCol(text: string, index: number) {
   const before = text.slice(0, index);

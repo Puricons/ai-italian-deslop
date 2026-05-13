@@ -1,8 +1,7 @@
 import type { Rule, Diagnostic, LintContext } from "../../types.js";
-import { createRequire } from "module";
+import overusedAdjectivesData from "./data/overused-adjectives.json" assert { type: "json" };
 
-const require = createRequire(import.meta.url);
-const DATA: { threshold: number; adjectives: string[] } = require("./data/overused-adjectives.json");
+const DATA: { threshold: number; adjectives: string[] } = overusedAdjectivesData as { threshold: number; adjectives: string[] };
 
 function getLineCol(text: string, index: number) {
   const before = text.slice(0, index);

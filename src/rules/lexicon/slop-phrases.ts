@@ -1,8 +1,7 @@
 import type { Rule, Diagnostic, LintContext } from "../../types.js";
-import { createRequire } from "module";
+import slopPhrasesData from "./data/slop-phrases.json" assert { type: "json" };
 
-const require = createRequire(import.meta.url);
-const SLOP_PHRASES: string[] = require("./data/slop-phrases.json");
+const SLOP_PHRASES: string[] = slopPhrasesData as string[];
 
 function getLineCol(text: string, index: number) {
   const before = text.slice(0, index);
