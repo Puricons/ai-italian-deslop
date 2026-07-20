@@ -25,6 +25,22 @@ describe("slop-phrases", () => {
     expect(d.length).toBeGreaterThan(0);
   });
 
+  it("rileva 'gioca un ruolo chiave'", () => {
+    const d = slopPhrasesRule.check("Questo strumento gioca un ruolo chiave nel processo.", ctx);
+    expect(d.length).toBeGreaterThan(0);
+  });
+
+  it("rileva 'la domanda sorge spontanea'", () => {
+    const d = slopPhrasesRule.check("A questo punto la domanda sorge spontanea.", ctx);
+    expect(d.length).toBeGreaterThan(0);
+  });
+
+  it("preferisce la frase più lunga in caso di sovrapposizione", () => {
+    const d = slopPhrasesRule.check("È un vero e proprio punto di svolta per l'azienda.", ctx);
+    expect(d).toHaveLength(1);
+    expect(d[0].message.toLowerCase()).toContain("un vero e proprio punto di svolta");
+  });
+
   it("include frasi custom dalla config", () => {
     const cfg = {
       config: {

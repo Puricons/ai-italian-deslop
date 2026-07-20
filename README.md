@@ -44,7 +44,7 @@ ideslop rules orthography/accented-words
 |---|---|
 | **Orthography** | `perche` → `perché`, `piu` → `più`, `pò` → `po'`, `un'altro` → `un altro` |
 | **Punctuation** | `--` as punctuation, dramatic `...`, staccato sentences ("Non è X. È Y. È tutto.") |
-| **Lexicon** | "vale la pena notare", "tuffiamoci", "in sintesi", "è fondamentale capire che" (75+ phrases) |
+| **Lexicon** | "vale la pena notare", "tuffiamoci", "in sintesi", "è fondamentale capire che" (140+ phrases) |
 | **Structure** | innanzitutto/inoltre/infine skeleton, parallel clichés, list overuse |
 
 ## Configuration
